@@ -1,0 +1,26 @@
+{
+  "name": "poligonosapp-with-deno",
+  "version": "0.0.0",
+  "description": "leaflet plugin",
+  "author": "Luis Mendes <machadoluismendes@gmail.com>",
+  "homepage": "https://github.com/poligonosapp/poligonosdemos-lerna-deno#readme",
+  "license": "ISC",
+  "main": "lib/poligonosapp-with-deno.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poligonosapp/poligonosdemos-lerna-deno.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/poligonosapp/poligonosdemos-lerna-deno/issues"
+  }
+}
