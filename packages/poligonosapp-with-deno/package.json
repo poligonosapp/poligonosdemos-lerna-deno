@@ -22,5 +22,8 @@
   },
   "bugs": {
     "url": "https://github.com/poligonosapp/poligonosdemos-lerna-deno/issues"
+  },
+  "dependencies": {
+    "poligonosapp": "^1.7.1-with-typescript-and-snyk"
   }
 }
