@@ -18,12 +18,68 @@
     "url": "git+https://github.com/poligonosapp/poligonosdemos-lerna-deno.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "start": "start",
+    "babel-node": "babel-node --presets='@babel/preset-env' --ignore='foo|bar|baz'",
+    "build": "build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "src/setupTests.js"
+    ]
   },
   "bugs": {
     "url": "https://github.com/poligonosapp/poligonosdemos-lerna-deno/issues"
   },
   "dependencies": {
-    "poligonosapp": "^1.7.1-with-typescript-and-snyk"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.1.10",
+    "browserlist": "^4.16.5",
+    "css-what": "^5.0.1",
+    "glob-parent": "^5.1.2",
+    "jwt-decode": "^3.1.2",
+    "normalize-url": "^6.1.0",
+    "poligonosapp": "^1.7.1-with-typescript-and-snyk",
+    "postcss": "^7.0.36 && <8.0.0 || ^8.2.10",
+    "quicklink": "^2.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router": "^5.2.0",
+    "web-vitals": "^0.2.4"
+  },
+  "devDependencies": {
+    "jest-expo": "^40.0.2",
+    "react-scripts": "^4.0.1",
+    "react-test-renderer": "^17.0.1",
+    "webpack-route-manifest": "^1.3.0",
+    "webpack": "^5.44.0"
+  },
+  "peerDependencies": {
+    "normalize-url": "^6.0.1 || ^4.5.1 && <5.0.0 || ^5.3.1 && <6.0.0",
+    "css-what": "^5.0.1",
+    "glob-parent": "^5.1.2",
+    "browserlist": "^4.16.5",
+    "postcss": "^8.2.10 || ^7.0.36 && <8.0.0"
   }
 }
